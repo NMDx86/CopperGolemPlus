@@ -1,7 +1,7 @@
-package com.nmdx86.rcg.mixin;
+package com.nmdx86.cgplus.mixin;
 
-import com.nmdx86.rcg.ReinforcedCopperGolemMod;
-import com.nmdx86.rcg.config.ModConfig;
+import com.nmdx86.cgplus.CopperGolemPlusMod;
+import com.nmdx86.cgplus.config.ModConfig;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 import java.util.function.Predicate;
 
 @Mixin(CopperGolemBrain.class)
-public class ReinforcedCopperGolem {
+public class CopperGolemPlus {
 
     @ModifyArg(
             method = "addIdleActivities",
@@ -26,7 +26,7 @@ public class ReinforcedCopperGolem {
             index = 1
     )
     private static Predicate<BlockState> rcg$addCustomInputChests(Predicate<BlockState> original) {
-        ModConfig config = ReinforcedCopperGolemMod.getConfig();
+        ModConfig config = CopperGolemPlusMod.getConfig();
 
         if (!config.allowReinforcedAsInput) {
             return original;
@@ -45,7 +45,7 @@ public class ReinforcedCopperGolem {
                         return true;
                     }
                 } catch (Exception e) {
-                    ReinforcedCopperGolemMod.LOGGER.warn("Invalid chest identifier in config: {}", chestId);
+                    CopperGolemPlusMod.LOGGER.warn("Invalid chest identifier in config: {}", chestId);
                 }
             }
 
@@ -62,7 +62,7 @@ public class ReinforcedCopperGolem {
             index = 2
     )
     private static Predicate<BlockState> rcg$addCustomOutputChests(Predicate<BlockState> original) {
-        ModConfig config = ReinforcedCopperGolemMod.getConfig();
+        ModConfig config = CopperGolemPlusMod.getConfig();
 
         if (!config.allowReinforcedAsOutput) {
             return original;
@@ -81,7 +81,7 @@ public class ReinforcedCopperGolem {
                         return true;
                     }
                 } catch (Exception e) {
-                    ReinforcedCopperGolemMod.LOGGER.warn("Invalid chest identifier in config: {}", chestId);
+                    CopperGolemPlusMod.LOGGER.warn("Invalid chest identifier in config: {}", chestId);
                 }
             }
 

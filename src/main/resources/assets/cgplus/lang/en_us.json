@@ -1,0 +1,15 @@
+{
+  "text.autoconfig.copper_golem_plus.title": "Reinforced Copper Golem Config",
+
+  "text.autoconfig.copper_golem_plus.option.inputChests": "Input Containers",
+  "text.autoconfig.copper_golem_plus.option.inputChests.@Tooltip": "A list of container IDs that Copper Golems can take items from.\nExample: 'minecraft:chest'",
+
+  "text.autoconfig.copper_golem_plus.option.outputChests": "Output Containers",
+  "text.autoconfig.copper_golem_plus.option.outputChests.@Tooltip": "A list of container IDs that Copper Golems can deposit items into.",
+
+  "text.autoconfig.copper_golem_plus.option.allowReinforcedAsInput": "Enable Input List",
+  "text.autoconfig.copper_golem_plus.option.allowReinforcedAsInput.@Tooltip": "If enabled, Copper Golems will use the 'Input Containers' list to decide where to pull items from.",
+
+  "text.autoconfig.copper_golem_plus.option.allowReinforcedAsOutput": "Enable Output List",
+  "text.autoconfig.copper_golem_plus.option.allowReinforcedAsOutput.@Tooltip": "If enabled, Copper Golems will use the 'Output Containers' list to decide where to deposit items."
+}

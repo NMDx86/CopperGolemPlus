@@ -1,9 +1,11 @@
 {
 	"required": true,
-	"package": "com.nmdx86.rcg.mixin",
+	"package": "com.nmdx86.cgplus.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ReinforcedCopperGolem"
+		"CopperGolemPlus",
+		"MoveItemsTaskMixin",
+		"MoveItemsTaskAccessor"
 	],
 	"injectors": {
 		"defaultRequire": 1

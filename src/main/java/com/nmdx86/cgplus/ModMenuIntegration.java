@@ -1,6 +1,6 @@
-package com.nmdx86.rcg;
+package com.nmdx86.cgplus;
 
-import com.nmdx86.rcg.config.ModConfig;
+import com.nmdx86.cgplus.config.ModConfig;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 import me.shedaniel.autoconfig.AutoConfig;
